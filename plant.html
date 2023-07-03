@@ -1,0 +1,223 @@
+<html>
+<head>
+<title>PLANT CATALOG</title>
+
+</head>
+ 
+<body>
+<h3>PLANT CATALOG</h3>
+
+ 
+<table align = "center" cellpadding = "10">
+ 
+<!----- COMMON ---------------------------------------------------------->
+<tr>
+<td>COMMON</td>
+<td><input type="text" name="COMMON" maxlength="30"/>
+</td>
+</tr>
+ 
+<!----- BOTANICAL ---------------------------------------------------------->
+<tr>
+<td>BOTANICAL</td>
+<td><input type="text" name="BOTANICAL" maxlength="30"/>
+</td>
+</tr>
+
+ 
+<!----- LIGHT -------------------------------------------------------->
+<tr>
+    <td>LIGHT</td>
+     
+    <td>
+    <select name="LIGHT" id="LIGHT">
+    <option value="-1">Select</option>
+    <option value="1">Mostly Shady</option>
+    <option value="2">Shade</option>
+    <option value="3">Sun or Shade</option>
+    <option value="4">Sunny</option>
+    <option value="5">Mostly Sunny</option>
+    
+    </select>
+ 
+<!----- Zone ----------------------------------------------------------->
+<tr>
+<td>ZONE</td>
+<td>
+1 <input type="radio" name="ZONE" value="ZONE" />
+2 <input type="radio" name="ZONE" value="ZONE" />
+3<input type="radio" name="ZONE" value="ZONE" />
+4 <input type="radio" name="ZONE" value="ZONE" />
+5 <input type="radio" name="ZONE" value="ZONE" />
+Annual <input type="radio" name="ZONE" value="ZONE" />
+</td>
+</tr>
+
+<!----- AVAILABILITY ---------------------------------------------------------->
+<tr>
+<td>AVAILABILITY</td>
+<td><input type="text" name="AVAILABILITY" maxlength="30" />
+</td>
+</tr>
+ 
+<!----- PRICE ---------------------------------------------------------->
+<tr>
+<td>PRICE</td>
+<td><input type="text" name="PRICE" maxlength="6" />
+</td>
+</tr>
+ 
+ 
+<!----- Submit and Reset ------------------------------------------------->
+<tr>
+<td colspan="2" align="center">
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+</td>
+</tr>
+
+<div class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="content">
+                        <div class="toolbar">
+                            <!--Here you can write extra buttons/actions for the toolbar-->
+                        </div>
+                        <table id="bootstrap-table" class="table">
+                            <thead>
+                                <th data-field="state" data-checkbox="true"></th>
+                                <th data-field="id" class="text-center">COMMON</th>
+                                <th data-field="name" data-sortable="true">BOTANICAL</th>
+                                <th data-field="salary" data-sortable="true">ZONE</th>
+                                <th data-field="country" data-sortable="true">LIGHT</th>
+                                <th data-field="country" data-sortable="true">PRICE</th>
+                                <th data-field="country" data-sortable="true">AVAILABILITY</th>
+                            </thead>
+
+                            <tr>
+                                <td></td>
+                                <td>Bloodroot</td>
+                                <td>Sanguinaria 
+                                    canadensis</td>
+                                <td>4</td>
+                                <td>Mostly Shady</td>
+                                <td>$2.44</td>
+                                <td>031599</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Columbine</td>
+                                <td>Aquilegia canadensis</td>
+                                <td>3</td>
+                                <td>Mostly Shady</td>
+                                <td>$9.37</td>
+                                <td>030699</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Marsh Marigold</td>
+                                <td>Caltha palustris</td>
+                                <td>4</td>
+                                <td>Mostly Sunny</td>
+                                <td>$6.81</td>
+                                <td>051799</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Cowslip</td>
+                                <td>Caltha palustris</td>
+                                <td>4</td>
+                                <td>Mostly Shady</td>
+                                <td>$9.90</td>
+                                <td>030699</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Dutchman's Breeches</td>
+                                <td>Dicentra cucullaria </td>
+                                <td>3</td>
+                                <td>Mostly Shady</td>
+                                <td>$6.44</td>
+                                <td>012099</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Ginger, Wild</td>
+                                <td>Asarum canadense</td>
+                                <td>3</td>
+                                <td>Mostly Shady</td>
+                                <td>$9.03</td>
+                                <td>041899</td>
+                            </tr>
+
+                            <tr>
+                                <td></td>
+                                <td>Hepatica</td>
+                                <td>Hepatica americana </td>
+                                <td>4</td>
+                                <td>Mostly Shady</td>
+                                <td>$4.45</td>
+                                <td>012699</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Liverleaf</td>
+                                <td>Hepatica americana </td>
+                                <td>4</td>
+                                <td>Mostly Shady</td>
+                                <td>$3.99</td>
+                                <td>010299</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Jank-In-The-Pulpit</td>
+                                <td>Arisaema triphyllum </td>
+                                <td>4</td>
+                                <td>Mostly Shady</td>
+                                <td>$3.23</td>
+                                <td>020199</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Mayapple</td>
+                                <td>Podophyllum peltatum </td>
+                                <td>3</td>
+                                <td>Mostly Shady</td>
+                                <td>$2.98</td>
+                                <td>060599</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Phlox, Woodland</td>
+                                <td>Phlox divaricata </td>
+                                <td>3</td>
+                                <td>Sun or Shade</td>
+                                <td>$2.80</td>
+                                <td>012299</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Phlox, Blue</td>
+                                <td>Phlox divaricata </td>
+                                <td>3</td>
+                                <td>Sun or Shade</td>
+                                <td>$5.59</td>
+                                <td>021699</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div><!--  end card  -->
+        </div> <!-- end col-md-12 -->
+    </div> <!-- end row -->
+</div>
+</div>
+</table>
+ 
+</form>
+ 
+</body>
+</html>
