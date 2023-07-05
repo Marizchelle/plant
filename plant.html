@@ -1,223 +1,154 @@
-<html>
-<head>
-<title>PLANT CATALOG</title>
+<!-- @format -->
 
-</head>
- 
-<body>
-<h3>PLANT CATALOG</h3>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>plant_catalog</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="form">
+            <form method="post">
+                <h3>Click on a plant to display its Information</h3>
+                <label for="plant_name">Plant Name</label>
+                <br><br><br><br>
+                <label for="common">Common</label>
+                <br>
+                <input
+                    type="text"
+                    name="common"
+                    placeholder="Common"
+                    id="common" />
+                    <align:center></align:center><br><br>
 
- 
-<table align = "center" cellpadding = "10">
- 
-<!----- COMMON ---------------------------------------------------------->
-<tr>
-<td>COMMON</td>
-<td><input type="text" name="COMMON" maxlength="30"/>
-</td>
-</tr>
- 
-<!----- BOTANICAL ---------------------------------------------------------->
-<tr>
-<td>BOTANICAL</td>
-<td><input type="text" name="BOTANICAL" maxlength="30"/>
-</td>
-</tr>
+                <label for="bonatical">Bonatical</label>
+                 <br>
+                <input
+                    type="text"
+                    name="bonatical"
+                    placeholder="Bonatical"
+                    id="bonatical" />
+                    <align:center></align:center><br><br>
 
- 
-<!----- LIGHT -------------------------------------------------------->
-<tr>
-    <td>LIGHT</td>
-     
-    <td>
-    <select name="LIGHT" id="LIGHT">
-    <option value="-1">Select</option>
-    <option value="1">Mostly Shady</option>
-    <option value="2">Shade</option>
-    <option value="3">Sun or Shade</option>
-    <option value="4">Sunny</option>
-    <option value="5">Mostly Sunny</option>
-    
-    </select>
- 
-<!----- Zone ----------------------------------------------------------->
-<tr>
-<td>ZONE</td>
-<td>
-1 <input type="radio" name="ZONE" value="ZONE" />
-2 <input type="radio" name="ZONE" value="ZONE" />
-3<input type="radio" name="ZONE" value="ZONE" />
-4 <input type="radio" name="ZONE" value="ZONE" />
-5 <input type="radio" name="ZONE" value="ZONE" />
-Annual <input type="radio" name="ZONE" value="ZONE" />
-</td>
-</tr>
+                <label for="zone">Zone</label>
+                 <br>
+                <input type="text" name="zone" placeholder="Zone" id="zone" /><br><br>
 
-<!----- AVAILABILITY ---------------------------------------------------------->
-<tr>
-<td>AVAILABILITY</td>
-<td><input type="text" name="AVAILABILITY" maxlength="30" />
-</td>
-</tr>
- 
-<!----- PRICE ---------------------------------------------------------->
-<tr>
-<td>PRICE</td>
-<td><input type="text" name="PRICE" maxlength="6" />
-</td>
-</tr>
- 
- 
-<!----- Submit and Reset ------------------------------------------------->
-<tr>
-<td colspan="2" align="center">
-<input type="submit" value="Submit">
-<input type="reset" value="Reset">
-</td>
-</tr>
+                <label for="light">Light</label>
+                 <br>
+                <input
+                    type="text"
+                    name="light"
+                    placeholder="Light"
+                    id="light" /> <br>
+                    <align:center></align:center><br>
 
-<div class="content">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="card">
-                    <div class="content">
-                        <div class="toolbar">
-                            <!--Here you can write extra buttons/actions for the toolbar-->
-                        </div>
-                        <table id="bootstrap-table" class="table">
-                            <thead>
-                                <th data-field="state" data-checkbox="true"></th>
-                                <th data-field="id" class="text-center">COMMON</th>
-                                <th data-field="name" data-sortable="true">BOTANICAL</th>
-                                <th data-field="salary" data-sortable="true">ZONE</th>
-                                <th data-field="country" data-sortable="true">LIGHT</th>
-                                <th data-field="country" data-sortable="true">PRICE</th>
-                                <th data-field="country" data-sortable="true">AVAILABILITY</th>
-                            </thead>
+                <label for="price">Price</label>
+                 <br>
+                <input
+                    type="text"
+                    name="price"
+                    placeholder="Price"
+                    id="price" /> <br>
+                    <align:center></align:center><br>
 
-                            <tr>
-                                <td></td>
-                                <td>Bloodroot</td>
-                                <td>Sanguinaria 
-                                    canadensis</td>
-                                <td>4</td>
-                                <td>Mostly Shady</td>
-                                <td>$2.44</td>
-                                <td>031599</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td>Columbine</td>
-                                <td>Aquilegia canadensis</td>
-                                <td>3</td>
-                                <td>Mostly Shady</td>
-                                <td>$9.37</td>
-                                <td>030699</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td>Marsh Marigold</td>
-                                <td>Caltha palustris</td>
-                                <td>4</td>
-                                <td>Mostly Sunny</td>
-                                <td>$6.81</td>
-                                <td>051799</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td>Cowslip</td>
-                                <td>Caltha palustris</td>
-                                <td>4</td>
-                                <td>Mostly Shady</td>
-                                <td>$9.90</td>
-                                <td>030699</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td>Dutchman's Breeches</td>
-                                <td>Dicentra cucullaria </td>
-                                <td>3</td>
-                                <td>Mostly Shady</td>
-                                <td>$6.44</td>
-                                <td>012099</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td>Ginger, Wild</td>
-                                <td>Asarum canadense</td>
-                                <td>3</td>
-                                <td>Mostly Shady</td>
-                                <td>$9.03</td>
-                                <td>041899</td>
-                            </tr>
+                <label for="availability">Availability</label>
+                 <br>
+                <input
+                    type="text"
+                    name="availability"
+                    placeholder="Availability"
+                    id="availability" /> 
+                    <align:center></align:center><br><br>
+                    <br><br>
 
-                            <tr>
-                                <td></td>
-                                <td>Hepatica</td>
-                                <td>Hepatica americana </td>
-                                <td>4</td>
-                                <td>Mostly Shady</td>
-                                <td>$4.45</td>
-                                <td>012699</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td>Liverleaf</td>
-                                <td>Hepatica americana </td>
-                                <td>4</td>
-                                <td>Mostly Shady</td>
-                                <td>$3.99</td>
-                                <td>010299</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td>Jank-In-The-Pulpit</td>
-                                <td>Arisaema triphyllum </td>
-                                <td>4</td>
-                                <td>Mostly Shady</td>
-                                <td>$3.23</td>
-                                <td>020199</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td>Mayapple</td>
-                                <td>Podophyllum peltatum </td>
-                                <td>3</td>
-                                <td>Mostly Shady</td>
-                                <td>$2.98</td>
-                                <td>060599</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td>Phlox, Woodland</td>
-                                <td>Phlox divaricata </td>
-                                <td>3</td>
-                                <td>Sun or Shade</td>
-                                <td>$2.80</td>
-                                <td>012299</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td>Phlox, Blue</td>
-                                <td>Phlox divaricata </td>
-                                <td>3</td>
-                                <td>Sun or Shade</td>
-                                <td>$5.59</td>
-                                <td>021699</td>
-                            </tr>
+                <button type="button" name="submit" value="Save">Submit</button>
+                <button class="btn1" type="button" name="submit" value="Save">Delete</button>
+            </form>
+            <table id="table"></table>
+        </div>
+        <script>
+            function submitForm() {
+                var common = document.getElementById('common').value;
+                var bonatical = document.getElementById('bonatical').value;
+                var zone = document.getElementById('zone').value;
+                var light = document.getElementById('light').value;
+                var price = document.getElementById('price').value;
+                var availability =
+                    document.getElementById('availability').value;
 
-                        </tbody>
-                    </table>
-                </div>
-            </div><!--  end card  -->
-        </div> <!-- end col-md-12 -->
-    </div> <!-- end row -->
-</div>
-</div>
-</table>
- 
-</form>
- 
-</body>
+                var xhttp = new XMLHttpRequest();
+                //patch
+            }
+            function viewData() {
+                var table = document.getElementById('table');
+                var rows = table.getElementsByTagName('tr');
+                for (i = 0; i < rows.length; i++) {
+                    //when table row is click display value on all input
+                    rows[i].onclick = function () {
+                        document.getElementById('common').value =
+                            this.cells[0].innerHTML;
+                        document.getElementById('bonatical').value =
+                            this.cells[1].innerHTML;
+                        document.getElementById('zone').value =
+                            this.cells[2].innerHTML;
+                        document.getElementById('light').value =
+                            this.cells[3].innerHTML;
+                        document.getElementById('price').value =
+                            this.cells[4].innerHTML;
+                        document.getElementById('availability').value =
+                            this.cells[5].innerHTML;
+                    };
+                }
+            }
+
+            function loadDoc() {
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function () {
+                    if (this.readyState == 4 && this.status == 200) {
+                        myFunction(this);
+                    }
+                };
+                xhttp.open('GET', 'plant_catalog.xml', true);
+                xhttp.send();
+            }
+
+            function myFunction(xml) {
+                var i;
+                var xmlDoc = xml.responseXML;
+                var table =
+                    '<tr><th>Common</th><th>Bonatical</th><th>Zone</th><th>Light</th><th>Price</th><th>Availability</th></tr>';
+                var x = xmlDoc.getElementsByTagName('PLANT');
+                for (i = 0; i < x.length; i++) {
+                    table +=
+                        '<tr onclick="viewData()"><td>' +
+                        x[i].getElementsByTagName('COMMON')[0].childNodes[0]
+                            .nodeValue +
+                        '</td><td>' +
+                        x[i].getElementsByTagName('BOTANICAL')[0].childNodes[0]
+                            .nodeValue +
+                        '</td><td>' +
+                        x[i].getElementsByTagName('ZONE')[0].childNodes[0]
+                            .nodeValue +
+                        '</td><td>' +
+                        x[i].getElementsByTagName('LIGHT')[0].childNodes[0]
+                            .nodeValue +
+                        '</td><td>' +
+                        x[i].getElementsByTagName('PRICE')[0].childNodes[0]
+                            .nodeValue +
+                        '</td><td>' +
+                        x[i].getElementsByTagName('AVAILABILITY')[0]
+                            .childNodes[0].nodeValue +
+                        '</td></tr>';
+                }
+                document.getElementById('table').innerHTML = table;
+            }
+
+            loadDoc();
+
+            //search function
+        </script>
+    </body>
 </html>
